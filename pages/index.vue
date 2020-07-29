@@ -93,6 +93,11 @@ export default {
     mounted() {
       this.countdown('Sep 04 2020 17:00:00 GMT-0500')
     },
+    head() {
+      return {
+        title: 'Hackaton virtual'
+      }
+    },
   components: {
       HeaderApp,
       Questions,

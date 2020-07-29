@@ -12,7 +12,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <h3 class="lead font-weight-bold text-white">¿Cómo participar?</h3>
 
-            <a href="https://www.promperu.gob.pe/TurismoIN/sitio/Hackathon2019" target="_blank" class="base__button text-dark text-decoration-nones">Descargar las bases</a>
+            <a href="https://www.promperu.gob.pe/TurismoIN/sitio/Hackathon2019" target="_blank" class="base__button text-decoration-nones">Descargar las bases</a>
           </div>
 
           <div class="text-white mt-5">
@@ -96,6 +96,8 @@
   &__button {
     background-color: rgba($warning, .9);
 
+    color: $dark;
+
     font-weight: 700;
 
     display: inline-block;
@@ -104,8 +106,18 @@
     border: 0;
     border-radius: 2rem;
 
+    transform: scale(0.95);
+
+    transition: transform .5s;
+
     &:hover {
       background-color: $warning;
+
+      color: $dark;
+
+      text-decoration: none;
+
+      transform: scale(0.9);
     }
   }
 }

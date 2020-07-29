@@ -13,7 +13,7 @@
 
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Inscripciones</span>
+          <span class="w-70 d-lg-none">Inscripciones</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Inscripciones</h3>
@@ -24,7 +24,7 @@
         <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Publicación de equipos inscritos</span>
+          <span class="w-70 d-lg-none">Publicación de equipos inscritos</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Publicación de equipos inscritos</h3>
@@ -35,7 +35,7 @@
         <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Mentorias</span>
+          <span class="w-70 d-lg-none">Mentorias</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Mentorias</h3>
@@ -46,7 +46,7 @@
         <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Desarrollo de Hackaton</span>
+          <span class="w-70 d-lg-none">Desarrollo de Hackaton</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Desarrollo de Hackaton</h3>
@@ -57,7 +57,7 @@
         <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Presentación de prototipos</span>
+          <span class="w-70 d-lg-none">Presentación de prototipos</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Presentación de prototipos</h3>
@@ -68,7 +68,7 @@
         <div class="col-md-4 px-5 point point--no-border d-flex flex-column flex-lg-row justify-content-center align-items-start">
           <h3 class="lead">22 de Julio</h3>
 
-          <span class="w-70">Premiación</span>
+          <span class="w-70 d-lg-none">Premiación</span>
         </div>
         <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
           <h3 class="lead w-70">Premiación</h3>

@@ -44,7 +44,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 second-column d-flex justify-content-end align-items-start">
+            <div class="col-md-6 second-column d-flex justify-content-end align-items-start mt-5 mt-lg-0">
               <a href="https://www.promperu.gob.pe/TurismoIN/sitio/Hackathon2019" target="_blank" class="banner__button mt-4 mt-lg-0 mr-3 mr-lg-0 text-decoration-none">Inscríbete Aquí</a>
             </div>
           </div>

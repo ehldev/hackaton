@@ -3,10 +3,6 @@
     <div class="header__container">
       <div class="logo-container mt-3 mt-lg-0">
         <img src="/logo-hackaton.png" alt="Logo Hackaton" class="logo">
-
-        <p class="text-white">
-          {{ currentSlide }}
-        </p>
       </div>
 
       <div class="hamburger-container pr-3 pr-lg-0">
@@ -73,7 +69,7 @@
 
         // Verifica si el usuario hizo scroll para mostrar el logo
         window.addEventListener("scroll", function(){
-          if(document.documentElement.scrollTop >= 350) {
+          if(document.documentElement.scrollTop >= 100) {
             _this.headerScroll = true
           }
           else {
@@ -101,6 +97,8 @@
             updateHistory: false
           })
         }
+
+        this.navActive = false
       },
       scrollSpy() {
         // Posición del scroll

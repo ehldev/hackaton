@@ -9,7 +9,6 @@
 
       <div class="row justify-content-center mt-5">
         <div class="col-md-10">
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/B6vElABYdp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -25,9 +24,5 @@
 <style lang="scss">
 .organizers {
   padding: 6rem 0;
-}
-
-iframe {
-  max-width: 100%;
 }
 </style>

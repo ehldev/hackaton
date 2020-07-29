@@ -17,7 +17,7 @@
         </div>
 
         <div class="col-lg-6 d-flex justify-content-center mt-5 mt-lg-4">
-          <img src="/retos.png" alt="Desafíos" class="challenges__image">
+          <iframe width="100%" height="350" src="https://www.youtube.com/embed/B6vElABYdp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>

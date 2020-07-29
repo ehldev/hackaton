@@ -8,69 +8,58 @@
       </div>
 
       <div class="row mt-5 justify-content-center">
-        <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start position-relative">
+        <div class="col-6 col-lg-4 px-lg-5 point d-flex flex-column flex-lg-row justify-content-lg-center align-items-start position-relative">
           <img src="/rectangulo-azul.png" alt="" class="horary__figure-1">
 
-          <h3 class="lead">22 de Julio</h3>
+          <h3 class="lead"></h3>
 
-          <span class="w-70 d-lg-none">Inscripciones</span>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Inscripciones</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
-          <h3 class="lead">22 de Julio</h3>
-
-          <span class="w-70 d-lg-none">Publicación de equipos inscritos</span>
+        <div class="col-6 col-lg-4 px-lg-5 point d-flex flex-column flex-lg-row justify-content-lg-center align-items-start">
+          <h3 class="lead"></h3>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Publicación de equipos inscritos</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
-          <h3 class="lead">22 de Julio</h3>
-
-          <span class="w-70 d-lg-none">Mentorias</span>
+        <div class="col-6 col-lg-4 px-lg-5 point d-flex flex-column flex-lg-row justify-content-lg-center align-items-start">
+          <h3 class="lead">21, 22, 23 de agosto de 2020</h3>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Mentorias</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
-          <h3 class="lead">22 de Julio</h3>
-
-          <span class="w-70 d-lg-none">Desarrollo de Hackaton</span>
+        <div class="col-6 col-lg-4 px-lg-5 point d-flex flex-column flex-lg-row justify-content-lg-center align-items-start">
+          <h3 class="lead">4, 5 y 6 de setiembre de 2020</h3>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Desarrollo de Hackaton</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 px-5 point d-flex flex-column flex-lg-row justify-content-center align-items-start">
-          <h3 class="lead">22 de Julio</h3>
-
-          <span class="w-70 d-lg-none">Presentación de prototipos</span>
+        <div class="col-6 col-lg-4 px-lg-5 point d-flex flex-column flex-lg-row justify-content-lg-center align-items-start">
+          <h3 class="lead">6 de setiembre de 2020</h3>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Presentación de prototipos</h3>
         </div>
       </div>
 
       <div class="row justify-content-center">
-        <div class="col-md-4 px-5 point point--no-border d-flex flex-column flex-lg-row justify-content-center align-items-start">
-          <h3 class="lead">22 de Julio</h3>
-
-          <span class="w-70 d-lg-none">Premiación</span>
+        <div class="col-6 col-lg-4 px-lg-5 point point--no-border d-flex flex-column flex-lg-row justify-content-lg-center align-items-start">
+          <h3 class="lead">6 de setiembre de 2020</h3>
         </div>
-        <div class="col-md-4 px-5 justify-content-center d-none d-lg-flex">
+        <div class="col-6 col-lg-4 px-lg-5 d-flex justify-content-center">
           <h3 class="lead w-70">Premiación</h3>
 
           <img src="/rectangulo-rojo.png" alt="" class="horary__figure-2">
@@ -98,11 +87,11 @@
     width: 70%;
   }
 
-  .col-md-4 {
-    width: 60%;
+  .col-6 {
     min-height: 100px;
 
     @media (min-width: 768px) {
+      width: 80%;
       min-height: 120px;
     }
 

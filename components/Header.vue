@@ -1,5 +1,5 @@
 <template>
-  <header class="header pt-3 pt-lg-5 pb-2 fixed-top" :class="headerScroll ? 'bg-purple' : ''">
+  <header class="header pt-3 pt-lg-5 pb-1 pb-lg-0 fixed-top" :class="headerScroll ? 'bg-purple' : ''">
     <div class="header__container">
       <div class="logo-container mt-3 mt-lg-0">
         <img src="/logo-hackaton.png" alt="Logo Hackaton" class="logo">
@@ -17,12 +17,23 @@
         </button>
       </div>
 
-      <nav
+      <!-- <nav
         class="main-nav d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start justify-content-lg-end"
         :class="navActive ? 'main-nav--active' : ''"
       >
         <a href="" class="main-nav__link" v-for="(item, index) in items" :key="index" :class="item.tag === currentSlide ? 'main-nav__link--active' : ''" @click.prevent="setCurrentSlide(item.tag, 'header')">{{ item.text }}</a>
-      </nav>
+      </nav> -->
+
+      <scrollactive class="main-nav" :offset="80" active-class="scrollactive-item--active" :class="navActive ? 'main-nav--active' : ''">
+        <a
+          :href="`#${item.tag}`"
+          class="scrollactive-item"
+          v-for="(item, index) in items" :key="index" :class="item.tag === currentSlide ? 'main-nav__link--active' : ''"
+          @click.prevent="navActive = false"
+          >
+          {{ item.text }}
+        </a>
+      </scrollactive>
     </div>
   </header>
 </template>
@@ -76,8 +87,6 @@
             _this.headerScroll = false
           }
 
-          _this.scrollSpy()
-
         })
       })
     },
@@ -115,10 +124,13 @@
         let coordsChallenges = challenges.getBoundingClientRect();
 
         if(wScroll > coordsQuestions.top) {
-          this.setCurrentSlide('questions')
+          this.setCurrentSlide('questions', '')
         } else if(wScroll <= coordsQuestions.top)  {
-          this.setCurrentSlide('inicio')
+          this.setCurrentSlide('inicio', '')
         }
+
+        console.log(coordsQuestions.top)
+        console.log(wScroll)
 
       }
     },
@@ -162,7 +174,7 @@
     }
 
     @media (min-width: 992px) {
-      max-width: 12vw;
+      max-width: 11vw;
     }
   }
 
@@ -193,8 +205,10 @@
 
   .main-nav {
     background-color: $purple;
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     width: 100%;
     height: 80vh;
@@ -207,16 +221,19 @@
     transition: right .5s;
 
     @media (min-width: 768px) {
-      background-color: transparent;
-
-      height: 70vh;
+      height: 90vh;
 
       top: 15vh;
     }
 
     @media (min-width: 992px) {
+      background-color: transparent;
       grid-row: 1 / 2;
       grid-column: 2 / 3;
+
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-end;
 
       height: auto;
 
@@ -233,8 +250,8 @@
       background-repeat: no-repeat;
     }
 
-    .main-nav__link {
-      font-size: 1.3em;
+    .scrollactive-item {
+      font-size: 1.1em;
       color: rgba(white, .7);
 
       margin: .5rem 1rem;
@@ -247,7 +264,7 @@
       }
 
       &--active {
-        color: $warning;
+        color: $warning !important;
       }
 
       @media (min-width: 992px) {
@@ -256,5 +273,29 @@
         margin: 0 1rem;
       }
     }
+
+    /* .main-nav__link {
+      font-size: 1em;
+      color: rgba(white, .7);
+
+      margin: .5rem 1rem;
+
+      transition: color .7s;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      &--active {
+        color: $warning !important;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 1em;
+
+        margin: 0 1rem;
+      }
+    } */
   }
 </style>

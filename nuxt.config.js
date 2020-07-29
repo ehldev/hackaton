@@ -37,7 +37,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    {src: "~/plugins/smothScroll.js", mode: 'client'}
+    { src: "~/plugins/smothScroll.js", mode: 'client' },
+    { src: "~/plugins/scrollSpy.js", mode: 'client' }
   ],
   /*
   ** Auto import components

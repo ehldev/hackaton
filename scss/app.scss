@@ -1,0 +1,46 @@
+@import "variables";
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-vue/src/index';
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-blue-dark {
+  background-color: #0E0848;
+}
+
+.bg-blue {
+  background-color: #000653;
+}
+
+@keyframes jump_low-data {
+  0% {
+    transform: translateY(-25px) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1);
+  }
+  100% {
+    transform: translateY(-25px) scale(1);
+  }
+}
+
+.title-with-border {
+  &::before {
+    content: '';
+
+    width: 50%;
+    height: 2px;
+
+    background-color: rgba(white, .7);
+
+    margin: auto;
+
+    position: absolute;
+    bottom: -1rem;
+    right: 0;
+    left: 0;
+  }
+}
